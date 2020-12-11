@@ -1,0 +1,102 @@
+.PatientsForms {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  width: 80vw;
+  left: 10vw;
+  margin-top: 5vh;
+  padding-bottom: 150px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.PatientsForms h1 {
+  background-color: #1F99F2;
+  color: white;
+  padding: 20px 62px;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  font-size: 2rem;
+}
+
+.PatientsForms h1 img {
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.PatientsForms form {
+  margin: 0;
+  padding: 0 62px;
+}
+
+.PatientsForms form label {
+  font-size: 1.5rem;
+}
+
+.PatientsForms form input {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: block;
+  width: 45%;
+}
+
+.PatientsForms form select {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  display: block;
+  width: 45%;
+  border: 1px solid black;
+}
+
+.PatientsForms form .picture {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+  width: 45%;
+}
+
+.PatientsForms form .picture img {
+  border: 3px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.PatientsForms form .picture button {
+  background-color: transparent;
+  border: 3px solid #F0B429;
+  color: #F0B429;
+}
+
+.PatientsForms form .picture button:hover {
+  background-color: #f3ca6a;
+  color: white;
+}
+
+.PatientsForms button {
+  width: 193px;
+  height: 53px;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #F0B429;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+}
+
+.PatientsForms button:hover {
+  background-color: #c29325;
+}
+/*# sourceMappingURL=PatientsForms.module.css.map */

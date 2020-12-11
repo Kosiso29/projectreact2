@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,cADU,CACV,KAAK,CAAC;EACF,eAAe,EAAE,QAAQ;EACzB,cAAc,EAAE,CAAC;EACjB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;CAEjB;;AAPP,AASI,cATU,CASV,EAAE,EATN,cAAc,CASN,EAAE,CAAC;EACP,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,GAAG;CACX",
+    "sources": [
+        "Patients.module.scss"
+    ],
+    "names": [],
+    "file": "Patients.module.css"
+}

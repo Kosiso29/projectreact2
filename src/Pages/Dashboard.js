@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactCalendar from '../Components/Calender';
+import ReactCalendar from '../Components/Calender/Calender';
 
 function Dashboard() {
     return(
@@ -10,20 +10,20 @@ function Dashboard() {
                         <ReactCalendar />
                     </div>
                     <div className='cardStat'>
-                        <img src={process.env.PUBLIC_URL + "/assets/img/patient.png"} />
+                        <img src={process.env.PUBLIC_URL + "/assets/img/patient.png"} alt='' />
                         <h4>45</h4><p>Patients</p>
                         
                     </div>
                     <div className='cardStat'>
-                        <img src={process.env.PUBLIC_URL + "/assets/img/doctor.png"} />
+                        <img src={process.env.PUBLIC_URL + "/assets/img/doctor.png"} alt='' />
                         <h4>15</h4><p>Nurses</p>
                     </div>
                     <div className='cardStat'>
-                        <img src={process.env.PUBLIC_URL + "/assets/img/doctor.png"} />
+                        <img src={process.env.PUBLIC_URL + "/assets/img/doctor.png"} alt='' />
                         <h4>15</h4><p>Doctors</p>
                     </div>
                     <div className='cardStat'>
-                        <img src={process.env.PUBLIC_URL + "/assets/img/visits.png"} />
+                        <img src={process.env.PUBLIC_URL + "/assets/img/visits.png"} alt='' />
                         <h4>17</h4><p>Average Visits</p>
                     </div>
                     <div className='cardBottom'>

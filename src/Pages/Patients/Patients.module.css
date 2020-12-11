@@ -1,0 +1,12 @@
+.PatientsTable table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 800px;
+}
+
+.PatientsTable th, .PatientsTable td {
+  text-align: left;
+  padding: 8px;
+}
+/*# sourceMappingURL=Patients.module.css.map */
