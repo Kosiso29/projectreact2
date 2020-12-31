@@ -6,7 +6,8 @@
     background-color: rgba(0,0,0,0.5);
     padding-top: 200px;
     left: 0;
-    div {
+    top: 0;
+    div:nth-child(1) {
         background: white;
         margin: auto;
         width: 300px;

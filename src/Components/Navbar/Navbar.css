@@ -11,15 +11,15 @@
           justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -20%;
   -webkit-transition: 850ms;
   transition: 850ms;
 }
 
 .nav-menu.active {
   left: 0;
-  -webkit-transition: 350ms;
-  transition: 350ms;
+  -webkit-transition: 850ms;
+  transition: 850ms;
 }
 
 .nav-text {

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+// import close from "../../assets/images/close.png";
 
 class Navbar extends Component {
 
@@ -8,7 +9,8 @@ class Navbar extends Component {
         bgColor1 : "clicked",
         bgColor2 : "",
         bgColor3 : "",
-        bgColor4 : ""
+        bgColor4 : "",
+        sidebar: true
     };
 
     showSidebar1 = () => this.setState({
@@ -36,6 +38,10 @@ class Navbar extends Component {
         bgColor4 : "clicked"
     });
 
+    closeNav = () => {
+        this.setState({sidebar: !this.state.sidebar});
+    }
+
     render() {
 
         if (window.location.pathname === "/patients" && this.state.bgColor2 !== "clicked") {
@@ -47,21 +53,6 @@ class Navbar extends Component {
         if (window.location.pathname === "/pharmacy" && this.state.bgColor4 !== "clicked") {
             this.setState({bgColor1 : "", bgColor2 : "", bgColor3 : "", bgColor4 : "clicked" });
         }
-        // switch (this.props) {
-        //     case (window.location.pathname === "/patients" && this.state.bgColor2 !== "clicked"):
-        //         this.setState({bgColor1 : "", bgColor2 : "clicked", bgColor3 : "", bgColor4 : "" });
-        //         break;
-        //     case (window.location.pathname === "/staff" && this.state.bgColor3 !== "clicked"):
-        //         this.setState({bgColor1 : "", bgColor2 : "", bgColor3 : "clicked", bgColor4 : "" });
-        //         break;
-        //     case (window.location.pathname === "/pharmacy" && this.state.bgColor4 !== "clicked"):
-        //         this.setState({bgColor1 : "", bgColor2 : "", bgColor3 : "", bgColor4 : "clicked" });
-        //         break;
-        //     default:
-        //         return this.state
-        // }
-    
-
     return (
         <>
             {/* {window.location.pathname === "/patients" ? sidebar.bgColor2='clicked' : null} */}
@@ -71,10 +62,12 @@ class Navbar extends Component {
                         <FaIcons.FaBars onClick={showSidebar}/>
                     </Link>
                 </div> */}
-                <nav className='nav-menu active' /*className={sidebar ? 'nav-menu active' : 'nav-menu'}*/>
+                <nav /*className='nav-menu active'*/ className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
                     <ul className="nav-menu-items">
+                        {/* <li className='nav-text'>
+                            <img src={close} onClick={this.closeNav} alt='' /></li> */}
                         <li /*className='navbar-toggle' onClick={showSidebar}*/ className='auroraname'>
-                            <img src={process.env.PUBLIC_URL + "/assets/img/auroraname.png"} width='180' alt='' />
+                            <img src={process.env.PUBLIC_URL + "/assets/img/auroraname.png"} onClick={this.closeNav} width='180' alt='' />
                             {/* <Link to='#' className='menu-bars'>
                                 <AiIcons.AiOutlineClose />
                             </Link> */}

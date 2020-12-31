@@ -8,15 +8,32 @@
     right: 0;
     height: 100vh;
     width: 50vw;
-    div:nth-child(1){
-        input{
-            background-image: url("./name.png");
-        }
+    label {
+        font-weight: bold;
+        font-size: 3.5rem;
+        width: 80%;
+        color: #102A43;
+        margin-left: 0;
+        margin-bottom: 60px;
     }
     div:nth-child(2){
         input{
-            background-image: url("./password.png");
+            background-image: url("../../assets/images/name.png");
         }
+        .searchSignin {
+            background-image: url("../../assets/images/password.png");
+        }
+    }
+    div:nth-child(3){
+        input{
+            background-image: url("../../assets/images/password.png");
+        }
+    }
+    p {
+        color: green;
+        margin: 0 auto;
+        font-size: 16px;
+        width: 40vw;
     }
 }
 .leftPanel{
@@ -52,7 +69,7 @@
         // max-height: 50%;
         // min-height: 20%;
         // align-self: flex-end;
-        background: url("./signin.png");
+        background: url("../../assets/images/signin.png");
         background-size: 110% 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -114,18 +131,18 @@
         
     }    
 }
-.search-boxSignin{
+.searchBoxSignin{
     height: 40px;
     border-radius: 40px;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 60px;
 }
-.search-btnSignin{
+.searchBtnSignin{
     width: 40px;
     height: 40px;
 }
-.search-txtSignin{
+.searchTxtSignin{
     border: none;
     outline: none;
     //padding: 0 15px;

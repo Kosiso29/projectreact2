@@ -10,6 +10,8 @@
     padding-bottom: 150px;
     margin-bottom: 40px;
     border-radius: 10px;
+    top: 0;
+    transition: 850ms;
     h1 {
         background-color: #1F99F2;
         color: white;
@@ -30,20 +32,29 @@
         // overflow: auto;
         label {
             font-size: 1.5rem;
+            color: #102A43;
         }
         input {
             font-size: 1.5rem;
-            border-radius: 5px;
-            border: 1px solid black;
+            line-height: 2.5rem;
+            padding: 0 20px;
+            outline: none;
+            border-radius: 10px;
+            box-sizing: border-box;
             display: block;
             width: 45%;
+            border: 3px solid #A7A1A1;
         }
         select {
             font-size: 1.5rem;
-            border-radius: 5px;
+            height: 3rem;
+            padding: 0 20px;
+            outline: none;
+            border-radius: 10px;
+            box-sizing: border-box;
             display: block;
             width: 45%;
-            border: 1px solid black;
+            border: 3px solid #A7A1A1;
         }
         
         .picture {
@@ -53,8 +64,9 @@
             margin-top: 25px;
             width: 45%;
             img {
-                border: 3px solid gray;
-                border-radius: 5px;
+                border: 3px solid #A7A1A1;
+                border-radius: 10px;
+                box-sizing: border-box;
                 margin-top: 5px;
             }
             button {
@@ -94,4 +106,9 @@
             background-color: #c29325;
         }
     }
+}
+
+.PatientsForms.active {
+    top: -200%;
+    transition: 850ms
 }

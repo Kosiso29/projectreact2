@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,YAAY;CAIxB;;AAPD,AAII,cAJU,CAIV,CAAC,CAAC;EACE,OAAO,EAAE,YAAY;CACxB",
     "sources": [
-        "patient.module.scss"
+        "Patient.module.scss"
     ],
     "names": [],
-    "file": "patient.module.css"
+    "file": "Patient.module.css"
 }
