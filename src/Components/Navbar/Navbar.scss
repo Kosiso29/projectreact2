@@ -6,14 +6,11 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    left: -20%;
-    transition: 850ms;
-}
-
-.nav-menu.active{
     left: 0;
     transition: 850ms;
 }
+
+
 .nav-text{
     display: flex;
     justify-content: flex-start;
@@ -41,14 +38,24 @@
 .nav-text-active{
     background-color: white;
 }
+.burger{
+    position: fixed;
+    left: 20px; 
+    top: -3px; 
+    cursor: pointer;
+    display: none;
+}
 .auroraname{
-    margin-left: 37px;
+    margin-left: 47px;
     margin-top: 4px;
     margin-bottom: 5px;
     list-style: none;
-    font-size: 32px;
-    line-height: 38px;
+    // font-size: 32px;
+    // line-height: 38px;
     color: #F0F4F8;
+    img{
+        width: 180px;
+    }
 }
 .clicked{
     color: #003E6B;
@@ -65,4 +72,40 @@
 }
 span{
     margin-left: 16px;
+}
+
+@media (max-width: 850px) {
+    .burger{
+        display: block;
+    }
+    .nav-menu{
+        left: 0;
+        transition: 850ms;
+    }
+    .nav-menu.active{
+        left: -260px;
+        transition: 850ms;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-menu{
+        width: 180px;
+    }
+    .nav-text{
+        padding: 8px 0px 8px 24px;
+        height: 49px;
+        a{
+            font-size: 15px;
+            padding: 0 16px;
+        }
+    }
+    .auroraname{
+        margin-left: 57px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        img{
+            width: 110px;
+        }
+    }
 }

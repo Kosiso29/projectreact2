@@ -7,6 +7,11 @@ function Dashboard() {
         <>
             <div>
                 <div className={classes.dashboard}>
+                    <div className={classes.cardStat + ' ' + classes.mobileCalender}>
+                        {/* <img src={process.env.PUBLIC_URL + "/assets/img/patient.png"} alt='' /> */}
+                        <p>5th</p><h4>January</h4>
+                        
+                    </div>
                     <div className={classes.cardCalender}>
                         <ReactCalendar />
                     </div>

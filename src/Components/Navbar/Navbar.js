@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import close from "../../assets/images/close.png";
+import close from "../../assets/images/burger.png";
 
 class Navbar extends Component {
 
@@ -63,11 +63,13 @@ class Navbar extends Component {
                     </Link>
                 </div> */}
                 <nav /*className='nav-menu active'*/ className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
+                    <div className="burger">
+                                <img src={close} onClick={this.closeNav} alt='' width='30' /></div>
                     <ul className="nav-menu-items">
-                        {/* <li className='nav-text'>
+                        {/* <li className='nav-text' style={{backgroundColor: 'white'}}>
                             <img src={close} onClick={this.closeNav} alt='' /></li> */}
                         <li /*className='navbar-toggle' onClick={showSidebar}*/ className='auroraname'>
-                            <img src={process.env.PUBLIC_URL + "/assets/img/auroraname.png"} onClick={this.closeNav} width='180' alt='' />
+                            <img src={process.env.PUBLIC_URL + "/assets/img/auroraname.png"} onClick={this.closeNav} alt='' />
                             {/* <Link to='#' className='menu-bars'>
                                 <AiIcons.AiOutlineClose />
                             </Link> */}

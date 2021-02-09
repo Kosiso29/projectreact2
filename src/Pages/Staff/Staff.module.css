@@ -9,6 +9,9 @@
           column-gap: 2rem;
   row-gap: 3rem;
   margin: 60px 47px 36px 47px;
+  padding-left: 260px;
+  -webkit-transition: 850ms;
+  transition: 850ms;
 }
 
 .cardBottomStaff {
@@ -143,10 +146,11 @@
   font-size: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-  /* Style adjustments for non responsive websites */
-  body {
-    width: 940px;
+@media (max-width: 850px) {
+  .staff {
+    padding-left: 0;
+    -webkit-transition: 850ms;
+    transition: 850ms;
   }
 }
 /*# sourceMappingURL=Staff.module.css.map */

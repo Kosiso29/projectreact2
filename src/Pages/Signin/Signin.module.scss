@@ -8,6 +8,10 @@
     right: 0;
     height: 100vh;
     width: 50vw;
+    // transition: .3s linear;
+    div:nth-child(1){
+        display: none;
+    }
     label {
         font-weight: bold;
         font-size: 3.5rem;
@@ -16,7 +20,7 @@
         margin-left: 0;
         margin-bottom: 60px;
     }
-    div:nth-child(2){
+    div:nth-child(3){
         input{
             background-image: url("../../assets/images/name.png");
         }
@@ -24,7 +28,7 @@
             background-image: url("../../assets/images/password.png");
         }
     }
-    div:nth-child(3){
+    div:nth-child(4){
         input{
             background-image: url("../../assets/images/password.png");
         }
@@ -157,4 +161,40 @@
     background-size: 25px 25px;
     background-position-x: 30px;
     background-position-y: center;
+}
+
+@media (max-width: 850px) {
+    // .leftPanel{
+    //     left: -50vw;
+    //     transition: 1s linear;
+    // }
+    .rightPanel{
+        width: 100vw;
+        background-color: #1F99F2;
+        div:nth-child(1){
+            position: absolute;
+            display: block;
+            top: 0;
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            img {
+                margin-top: 38px;
+            }
+        }
+        // transition: .3s linear;
+        label{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    .buttonSignin{
+        button{
+            width: 80vw;
+            // transition: .3s linear;
+        }
+    }
+    .searchTxtSignin{
+        width: 80vw;
+    }
 }

@@ -29,17 +29,17 @@ class Pharmacy extends Component {
     return(
         <>
             <div className={classes.searchBox}>
-                    <input className={classes.searchTxt} type='text' placeholder="Search staff's name, ID" />
+                    <input className={classes.searchTxt} type='text' placeholder="Search Pharmacy's name, ID" />
                     <Link className={classes.searchBtn} to='#'></Link>
                 </div>
                 <div className={classes.buttonStaff}>
-                    <button type='submit'>Add Staff</button>
+                    <button type='submit'>Add Pharmacy</button>
                 </div>
                 
                 <div className={classes.staff}>
                     <div className={classes.cardStat}>
                         <img src={process.env.PUBLIC_URL + "/assets/img/doctor.png"} alt='' />
-                        <h4>45</h4><p>Nurser</p>
+                        <h4>45</h4><p>Nurse</p>
                         
                     </div>
                     <div className={classes.cardStat}>

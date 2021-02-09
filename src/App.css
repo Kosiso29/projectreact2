@@ -7,17 +7,10 @@
 }
 
 body {
-  padding-left: 260px;
   font-size: 3rem;
   background: #E5E5E5;
 }
 
 /*************** dashboard *****************/
 /*************** patient *****************/
-@media only screen and (max-width: 900px) {
-  /* Style adjustments for non responsive websites */
-  body {
-    width: 940px;
-  }
-}
 /*# sourceMappingURL=App.css.map */

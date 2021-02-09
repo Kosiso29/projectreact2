@@ -9,6 +9,9 @@
           column-gap: 2rem;
   row-gap: 3rem;
   margin: 60px 47px 36px 47px;
+  padding-left: 260px;
+  -webkit-transition: 850ms;
+  transition: 850ms;
 }
 
 .cardBottomPatients {
@@ -72,6 +75,9 @@
   height: 40px;
   border-radius: 40px;
   margin-bottom: 40px;
+  padding-left: 260px;
+  -webkit-transition: 850ms;
+  transition: 850ms;
 }
 
 .searchBtn {
@@ -155,10 +161,16 @@
   font-size: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-  /* Style adjustments for non responsive websites */
-  body {
-    width: 940px;
+@media (max-width: 850px) {
+  .patients {
+    padding-left: 0;
+    -webkit-transition: 850ms;
+    transition: 850ms;
+  }
+  .searchBox {
+    padding-left: 0;
+    -webkit-transition: 850ms;
+    transition: 850ms;
   }
 }
 /*# sourceMappingURL=Patients.module.css.map */

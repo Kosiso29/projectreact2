@@ -126,6 +126,7 @@ class Signin extends Component {
 
         let rightPanel = (
             <div className={classes.rightPanel}>
+                <div><img src={process.env.PUBLIC_URL + "/assets/img/logo.png"} width='73' alt='' /></div>
                 <label>Sign In</label>
                 <div className={classes.searchBoxSignin}>
                     <input key='email' onChange={(event) => this.onChangeHandler(event, 'email')} value={this.state.email} className={classes.searchTxtSignin} type='text' placeholder="Email" name="Email" />
@@ -150,6 +151,7 @@ class Signin extends Component {
             }
             rightPanel = (
                 <div className={classes.rightPanel}>
+                    <div><img src={process.env.PUBLIC_URL + "/assets/img/logo.png"} width='73' alt='' /></div>
                     <label>Create Password</label>
                     <div className={classes.searchBoxSignin}>
                         <input key='email' onChange={(event) => this.onChangeHandler(event, 'email')} value={this.state.email} className={classes.searchTxtSignin + ' ' + classes.searchSignin} type='password' placeholder="Enter Password" name="enter-password" />

@@ -19,6 +19,10 @@
   width: 50vw;
 }
 
+.rightPanel div:nth-child(1) {
+  display: none;
+}
+
 .rightPanel label {
   font-weight: bold;
   font-size: 3.5rem;
@@ -28,15 +32,15 @@
   margin-bottom: 60px;
 }
 
-.rightPanel div:nth-child(2) input {
+.rightPanel div:nth-child(3) input {
   background-image: url("../../assets/images/name.png");
 }
 
-.rightPanel div:nth-child(2) .searchSignin {
+.rightPanel div:nth-child(3) .searchSignin {
   background-image: url("../../assets/images/password.png");
 }
 
-.rightPanel div:nth-child(3) input {
+.rightPanel div:nth-child(4) input {
   background-image: url("../../assets/images/password.png");
 }
 
@@ -154,5 +158,33 @@
   background-size: 25px 25px;
   background-position-x: 30px;
   background-position-y: center;
+}
+
+@media (max-width: 850px) {
+  .rightPanel {
+    width: 100vw;
+    background-color: #1F99F2;
+  }
+  .rightPanel div:nth-child(1) {
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+  }
+  .rightPanel div:nth-child(1) img {
+    margin-top: 38px;
+  }
+  .rightPanel label {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .buttonSignin button {
+    width: 80vw;
+  }
+  .searchTxtSignin {
+    width: 80vw;
+  }
 }
 /*# sourceMappingURL=Signin.module.css.map */
