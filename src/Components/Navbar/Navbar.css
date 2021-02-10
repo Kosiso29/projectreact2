@@ -59,10 +59,6 @@
 }
 
 .burger {
-  position: fixed;
-  left: 20px;
-  top: -3px;
-  cursor: pointer;
   display: none;
 }
 
@@ -101,6 +97,9 @@ span {
 
 @media (max-width: 850px) {
   .burger {
+    position: fixed;
+    left: 20px;
+    top: 20px;
     display: block;
   }
   .nav-menu {

@@ -63,8 +63,8 @@ class Navbar extends Component {
                     </Link>
                 </div> */}
                 <nav /*className='nav-menu active'*/ className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
-                    <div className="burger">
-                                <img src={close} onClick={this.closeNav} alt='' width='30' /></div>
+                    {/* <div className="burger"> */}
+                        <img src={close} className="burger" onClick={this.closeNav} alt='' width='30' />
                     <ul className="nav-menu-items">
                         {/* <li className='nav-text' style={{backgroundColor: 'white'}}>
                             <img src={close} onClick={this.closeNav} alt='' /></li> */}

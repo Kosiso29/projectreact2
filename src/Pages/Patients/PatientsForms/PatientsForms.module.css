@@ -117,7 +117,7 @@
 }
 
 .PatientsForms.active {
-  top: -200%;
+  top: -300%;
   -webkit-transition: 850ms;
   transition: 850ms;
 }

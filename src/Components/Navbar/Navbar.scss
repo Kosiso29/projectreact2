@@ -39,10 +39,6 @@
     background-color: white;
 }
 .burger{
-    position: fixed;
-    left: 20px; 
-    top: -3px; 
-    cursor: pointer;
     display: none;
 }
 .auroraname{
@@ -76,6 +72,10 @@ span{
 
 @media (max-width: 850px) {
     .burger{
+        position: fixed;
+        left: 20px; 
+        top: 20px; 
+        // cursor: pointer;
         display: block;
     }
     .nav-menu{
