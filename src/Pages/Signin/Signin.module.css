@@ -180,6 +180,9 @@
     margin-top: 50px;
     text-align: center;
   }
+  .rightPanel p {
+    width: 80vw;
+  }
   .buttonSignin button {
     width: 80vw;
   }
