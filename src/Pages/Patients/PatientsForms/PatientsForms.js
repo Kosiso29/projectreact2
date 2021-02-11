@@ -75,7 +75,7 @@ class patientsforms extends Component {
 
                     <div className={classes.picture}>
                     <label>Profile Picture</label>
-                    <img src={process.env.PUBLIC_URL + "/assets/img/patient.png"} width='200' alt='' />
+                    <img src={process.env.PUBLIC_URL + "/assets/img/patient.png"} alt='' />
                     <button type='submit'>Select Image</button>
                     </div>
 
@@ -98,12 +98,12 @@ class patientsforms extends Component {
                     <label>Address</label>
                     <input style={{width: '100%'}} type='text' value={this.state.address} onChange={(event) => this.setState({address: event.target.value})} name='address'></input>
 
-                    <div style={{display: 'inline-block', width: '45%'}}>
+                    <div className={classes.telephone}>
                     <label>Telephone</label>
                     <input style={{width: '100%'}} type='text' value={this.state.phoneNumber} onChange={(event) => this.setState({phoneNumber: event.target.value})} name='phone'></input>
                     </div>
 
-                    <div style={{display: 'inline-block', width: '45%', marginLeft: '10%'}}>
+                    <div className={classes.blood}>
                     <label>Blood Group</label>
                     <select name='blood_group' style={{width: '100%'}}>
                         <option disabled='disabled'>--Choose Option</option>
@@ -115,7 +115,7 @@ class patientsforms extends Component {
                     </div>
 
                 </form>
-                <button onClick={this.postDataHandler} style={{marginLeft: '62px'}}>Create Profile</button>
+                <button className={classes.create} onClick={this.postDataHandler}>Create Profile</button>
                 </Scrollbar>
             </div>
     );

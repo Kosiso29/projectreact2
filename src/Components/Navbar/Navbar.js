@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import close from "../../assets/images/burger.png";
+import Backdrop from '../../UI/Backdrop/Backdrop';
 
 class Navbar extends Component {
 
@@ -62,6 +63,7 @@ class Navbar extends Component {
                         <FaIcons.FaBars onClick={showSidebar}/>
                     </Link>
                 </div> */}
+                {this.state.sidebar ? null : <Backdrop index='5' clicked={this.closeNav} show />}
                 <nav /*className='nav-menu active'*/ className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
                     {/* <div className="burger"> */}
                         <img src={close} className="burger" onClick={this.closeNav} alt='' width='30' />
