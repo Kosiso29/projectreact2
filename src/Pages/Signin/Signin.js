@@ -172,7 +172,7 @@ class Signin extends Component {
         return(
             <>
                 {this.state.loggedIn ? <Login text="Login Successful" /> : null}
-                {this.state.error ? <Login text="Login Unsuccessful" /> : null}
+                {this.state.error ? <Login text="Login Failed" /> : null}
                 {this.state.submitted ? <Login spinner='show' login='none' /> : null}
                 {/* {this.state.submitted ? <Redirect push to='/dashboard' /> : null} */}
                 <div className={classes.leftPanel}>
