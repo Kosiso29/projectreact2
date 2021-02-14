@@ -189,25 +189,26 @@
     font-size: 15px;
   }
   .buttonPatients {
-    height: 50px;
+    height: 35px;
   }
   .buttonPatients button {
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     font-size: 15px;
     text-indent: 10px;
     background-size: 15px 15px;
-    background-position-x: 50px;
+    background-position-x: 30px;
     background-position-y: center;
   }
   .searchTxt {
     font-size: 12px;
-    line-height: 30px;
-    width: 45%;
-    min-width: 250px;
+    line-height: 35px;
     text-indent: 60px;
     background-position-x: 10px;
     background-position-y: center;
+    margin-right: 20px;
+    width: calc(100vw - 40px);
+    min-width: 50px;
   }
 }
 
@@ -228,11 +229,6 @@
   }
   .cardBottomPatients table {
     display: none;
-  }
-  .searchTxt {
-    margin-right: 20px;
-    width: calc(100vw - 40px);
-    min-width: 50px;
   }
   .buttonPatients {
     width: calc(100vw - 40px);

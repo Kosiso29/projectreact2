@@ -46,6 +46,12 @@ class Signin extends Component {
             }, 5000);
             console.log('[Query before delay] ' + this.props.UserId);
             this.setState({userId: userId});
+        } 
+        if (this.state.loggedIn === false) {
+            this.setState({
+                email: 'test@test.com',
+                password: '123456'
+            })
         }
 
         
